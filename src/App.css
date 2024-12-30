@@ -1,0 +1,218 @@
+.App {
+  text-align: center;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-image: url("https://img.freepik.com/free-vector/hand-drawn-background-christmas-season-celebration_23-2150989636.jpg");
+  background-size: cover;
+}
+
+.title {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sections{
+  width: auto;
+  height: 100%;
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+}
+
+.boxes{
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 191, 255, 0.64);
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.43);
+  backdrop-filter: blur(2px);
+}
+
+.f-col{
+  flex-direction: column;
+}
+
+.f-center{
+  align-items: center;
+}
+
+h1 {
+  color: #f36767;
+  text-shadow:
+          -2px -2px 0 black, /* Top-left shadow */
+          2px -2px 0 black, /* Top-right shadow */
+          -2px 2px 0 black, /* Bottom-left shadow */
+          2px 2px 0 black; /* Bottom-right shadow */
+}
+
+h4{
+  margin: 8px;
+  color: #0391c0;
+}
+
+p{
+  margin: 4px;
+  font-size: 14px;
+}
+
+.name{
+  max-width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid deepskyblue;
+  font-size: 15px;
+}
+
+.msg{
+  max-width: 250px;
+  width: 100%;
+  height: 150px;
+  font-size: 15px;
+  overflow: auto;
+  border-radius: 10px;
+  border: 2px solid deepskyblue;
+}
+
+.sendError{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.send{
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 17px;
+  border: 2px solid rgba(0, 191, 255, 0.78);
+  background-color: rgba(255, 255, 255, 0.72);
+  color: deepskyblue;
+  transition: 0.8s ease-in-out;
+}
+
+.send:hover{
+  border: 2px solid rgba(255, 255, 255, 0.71);
+  background-color: rgba(0, 191, 255, 0.74);
+  color: white;
+}
+
+.error{
+  width: 100%;
+  height: 50px;
+}
+
+.error p{
+  color: #bd3838;
+}
+
+.middle{
+  display: flex;
+  gap: 10px;
+}
+
+/* Progress Bar */
+
+.bar{
+  max-width: 7%;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.progress{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* ---------------- */
+
+.allMsg{
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.71);
+  background-color: rgba(0, 191, 255, 0.51);
+  color: white;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  gap: 5px;
+}
+
+.newMsg{
+  width: 90%;
+  height: 60px;
+  border: 2px solid rgba(0, 191, 255, 0.78);
+  background-color: rgba(255, 255, 255, 0.72);
+  color: deepskyblue;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.svg{
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+
+.receive,
+.receiveMsg{
+  width: 90%;
+  border: 2px solid rgba(0, 191, 255, 0.78);
+  background-color: rgba(255, 255, 255, 0.72);
+  color: deepskyblue;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  align-items: start;
+}
+
+.receive{
+  height: auto;
+}
+.receiveMsg{
+  height: 150px;
+  flex-direction: column;
+}
+
