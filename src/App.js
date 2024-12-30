@@ -75,7 +75,7 @@ function App() {
                   </div>
                   <div>
                       <h4>Message to Santa ⛄</h4>
-                      <input className="msg" type="text" placeholder="Write your message to Santa" ref={InputText}/>
+                      <textarea className="msg" placeholder="Dear Santa..." ref={InputText}></textarea>
                   </div>
                   <div className="sendError">
                       <button onClick={Send} className="send">Send ❄</button>
